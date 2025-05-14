@@ -156,15 +156,15 @@ td {
 /* Specific adjustments for "Course", "Absences", "Tardies" columns */
 th:nth-child(12), /* Course */
 td:nth-child(12) {
-    width: 15%; /* Adjust as needed */
-    text-align: left; /* Align course names to the left for better readability */
+    width: 25%; /* Increased width for Course */
+    text-align: left;
 }
 
 th:nth-child(17), /* Absences */
 td:nth-child(17),
 th:nth-child(18), /* Tardies */
 td:nth-child(18) {
-    width: 8%; /* Adjust as needed */
+    width: 12%; /* Increased width for Absences/Tardies */
 }
 
 /* Responsive Table for small screens */
@@ -202,7 +202,7 @@ td:nth-child(18) {
     /* Adjust column widths for smaller screens if needed */
     th:nth-child(12),
     td:nth-child(12) {
-        width: auto; /* Allow more width on smaller screens */
+        width: auto;
         text-align: left;
     }
 
@@ -210,7 +210,7 @@ td:nth-child(18) {
     td:nth-child(17),
     th:nth-child(18),
     td:nth-child(18) {
-        width: auto; /* Allow more width on smaller screens */
+        width: auto;
     }
 }
 
@@ -252,14 +252,14 @@ td:nth-child(18) {
     /* Adjust column widths for larger screens */
     th:nth-child(12),
     td:nth-child(12) {
-        width: 20%; /* Make Course wider on larger screens */
+        width: 30%; /* Further increased width for Course on larger screens */
     }
 
     th:nth-child(17),
     td:nth-child(17),
     th:nth-child(18),
     td:nth-child(18) {
-        width: 10%; /* Adjust width for Absences and Tardies on larger screens */
+        width: 15%; /* Further increased width for Absences/Tardies on larger screens */
     }
 }
 
