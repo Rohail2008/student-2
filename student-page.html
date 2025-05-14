@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Student Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h2>Welcome, <span id="studentName"></span></h2>
+    <p><strong>Username:</strong> <span id="studentUsername"></span></p>
+    <p><strong>Grade:</strong> <span id="studentGrade"></span></p>
+    <p><strong>Course:</strong> <span id="studentCourse"></span></p>
+
+    <h3>Attendance By Class</h3>
+    <div class="table-container">
+        <table>
+            <thead>
+            <tr>
+                <th>Exp</th>
+                <th colspan="5">Last Week</th>
+                <th colspan="5">This Week</th>
+                <th>Course</th>
+                <th>Q1</th>
+                <th>T2</th>
+                <th>Q3</th><th>Q4</th><th>T3</th>
+                <th>Absences</th>
+                <th>Tardies</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>M</th><th>T</th><th>W</th><th>T</th><th>F</th>
+                <th>M</th><th>T</th><th>W</th><th>T</th><th>F</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th><th></th><th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody id="attendanceTable"></tbody>
+        </table>
+    </div>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script src="student-page.js"></script>
+</body>
+</html>

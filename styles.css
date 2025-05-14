@@ -1,0 +1,244 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/* Login Box */
+.login-box, .container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #00fff7;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #00fff7;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #00c8c8;
+}
+
+.note {
+    margin-top: 1rem;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* Title */
+h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #00fff7;
+}
+
+h3 {
+    color: #00fff7;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphs and Text */
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #00fff7;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #00c8c8;
+}
+
+.logout {
+    background: #ff5252;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.logout:hover {
+    background: #ff2a2a;
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    font-size: 1rem;
+    table-layout: fixed; /* Crucial for layout! */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+th {
+    background-color: rgba(0, 255, 255, 0.1);
+    color: #00fff7;
+    font-weight: 600;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Table for small screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+        overflow-x: auto;
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    button, .logout {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Expand Table to full width on larger screens */
+@media (min-width: 1024px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 2rem;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    button, .logout {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Mobile Specific */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    table, th, td {
+        font-size: 10px;
+    }
+
+    button, .logout {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,108 @@
+[
+  {
+    "username": "ch@rohail.com",
+    "password": "ch12!&@",
+    "name": "Chaudhry Rashid",
+    "grade": "A",
+    "course": "Final",
+    "attendance": [
+      {
+        "exp": "P1(A-F)",
+        "course": "HR4",
+        "teacher": "Shelly Thomas",
+        "email": "thomas@example.com",
+        "room": "111",
+        "absences": 0,
+        "tardies": 0,
+        "lastWeek": ["P", "P", "A", "P", "P"],
+        "thisWeek": ["P", "P", "P", "P", "T"]
+      },
+      {
+        "exp": "P2(A-D)",
+        "course": "Math101",
+        "teacher": "Dr. Smith",
+        "email": "smith@example.com",
+        "room": "202",
+        "absences": 1,
+        "tardies": 1,
+        "lastWeek": ["A", "P", "P", "A", "P"],
+        "thisWeek": ["P", "P", "T", "P", "A"]
+      },
+      {
+        "exp": "P3(B-D)",
+        "course": "Science5",
+        "teacher": "Mr. Lee",
+        "email": "lee@example.com",
+        "room": "303",
+        "absences": 2,
+        "tardies": 0,
+        "lastWeek": ["P", "A", "P", "P", "P"],
+        "thisWeek": ["T", "P", "P", "A", "P"]
+      },
+      {
+        "exp": "P4(C-E)",
+        "course": "History102",
+        "teacher": "Mrs. Johnson",
+        "email": "johnson@example.com",
+        "room": "404",
+        "absences": 1,
+        "tardies": 2,
+        "lastWeek": ["P", "P", "A", "T", "P"],
+        "thisWeek": ["P", "T", "P", "P", "P"]
+      }
+    ]
+  },
+  {
+    "username": "student2",
+    "password": "student1234",
+    "name": "Student Two",
+    "grade": "B+",
+    "course": "Science",
+    "attendance": [
+      {
+        "exp": "P1(A-F)",
+        "course": "HR4",
+        "teacher": "Shelly Thomas",
+        "email": "thomas@example.com",
+        "room": "111",
+        "absences": 1,
+        "tardies": 0,
+        "lastWeek": ["A", "P", "P", "P", "P"],
+        "thisWeek": ["P", "T", "P", "A", "P"]
+      },
+      {
+        "exp": "P2(A-D)",
+        "course": "Math102",
+        "teacher": "Dr. Green",
+        "email": "green@example.com",
+        "room": "205",
+        "absences": 0,
+        "tardies": 1,
+        "lastWeek": ["P", "P", "P", "A", "P"],
+        "thisWeek": ["A", "P", "P", "P", "P"]
+      },
+      {
+        "exp": "P3(B-D)",
+        "course": "Physics1",
+        "teacher": "Prof. Brown",
+        "email": "brown@example.com",
+        "room": "212",
+        "absences": 0,
+        "tardies": 0,
+        "lastWeek": ["P", "P", "P", "P", "T"],
+        "thisWeek": ["P", "P", "P", "P", "T"]
+      },
+      {
+        "exp": "P4(C-E)",
+        "course": "Chemistry101",
+        "teacher": "Ms. White",
+        "email": "white@example.com",
+        "room": "305",
+        "absences": 2,
+        "tardies": 1,
+        "lastWeek": ["P", "A", "P", "P", "T"],
+        "thisWeek": ["T", "P", "P", "P", "T"]
+      }
+    ]
+  }
+]
