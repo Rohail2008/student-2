@@ -156,7 +156,7 @@ td {
 /* Specific adjustments for "Course", "Absences", "Tardies" columns */
 th:nth-child(12), /* Course */
 td:nth-child(12) {
-    width: 25%; /* Increased width for Course */
+    width: 45%; /* Increased width for Course */
     text-align: left;
 }
 
@@ -164,7 +164,7 @@ th:nth-child(17), /* Absences */
 td:nth-child(17),
 th:nth-child(18), /* Tardies */
 td:nth-child(18) {
-    width: 12%; /* Increased width for Absences/Tardies */
+    width: 35%; /* Increased width for Absences/Tardies */
 }
 
 /* Responsive Table for small screens */
