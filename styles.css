@@ -17,7 +17,7 @@ body {
     flex-direction: column;
 }
 
-/* Login Box */
+/* Login Box & Container */
 .login-box, .container {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
@@ -138,6 +138,10 @@ th, td {
     text-align: center;
     font-size: 0.9rem;
     color: #fff;
+    /* New properties to handle overflow: */
+    word-wrap: break-word;        /* For long words */
+    overflow-wrap: break-word;   /* Alternative for older browsers */
+    overflow: hidden;             /* Hide any excess */
 }
 
 th {
