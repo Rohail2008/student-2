@@ -138,10 +138,10 @@ th, td {
     text-align: center;
     font-size: 0.9rem;
     color: #fff;
-    /* New properties to handle overflow: */
-    word-wrap: break-word;        /* For long words */
-    overflow-wrap: break-word;   /* Alternative for older browsers */
-    overflow: hidden;             /* Hide any excess */
+    /* Improved overflow handling: */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
 }
 
 th {
