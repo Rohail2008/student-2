@@ -138,7 +138,6 @@ th, td {
     text-align: center;
     font-size: 0.9rem;
     color: #fff;
-    /* Improved overflow handling: */
     word-wrap: break-word;
     overflow-wrap: break-word;
     overflow: hidden;
@@ -152,6 +151,20 @@ th {
 
 td {
     background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Specific adjustments for "Course", "Absences", "Tardies" columns */
+th:nth-child(12), /* Course */
+td:nth-child(12) {
+    width: 15%; /* Adjust as needed */
+    text-align: left; /* Align course names to the left for better readability */
+}
+
+th:nth-child(17), /* Absences */
+td:nth-child(17),
+th:nth-child(18), /* Tardies */
+td:nth-child(18) {
+    width: 8%; /* Adjust as needed */
 }
 
 /* Responsive Table for small screens */
@@ -184,6 +197,20 @@ td {
 
     p {
         font-size: 0.9rem;
+    }
+
+    /* Adjust column widths for smaller screens if needed */
+    th:nth-child(12),
+    td:nth-child(12) {
+        width: auto; /* Allow more width on smaller screens */
+        text-align: left;
+    }
+
+    th:nth-child(17),
+    td:nth-child(17),
+    th:nth-child(18),
+    td:nth-child(18) {
+        width: auto; /* Allow more width on smaller screens */
     }
 }
 
@@ -220,6 +247,19 @@ td {
 
     p {
         font-size: 1rem;
+    }
+
+    /* Adjust column widths for larger screens */
+    th:nth-child(12),
+    td:nth-child(12) {
+        width: 20%; /* Make Course wider on larger screens */
+    }
+
+    th:nth-child(17),
+    td:nth-child(17),
+    th:nth-child(18),
+    td:nth-child(18) {
+        width: 10%; /* Adjust width for Absences and Tardies on larger screens */
     }
 }
 
